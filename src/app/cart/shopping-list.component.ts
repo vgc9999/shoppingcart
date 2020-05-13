@@ -1,6 +1,5 @@
 import { Component, OnInit,OnDestroy, Input } from '@angular/core';
 import { ServicesService } from './services.service';
-import { Item } from './item';
 import { CartState } from './cartstate';
 import {Subscription} from 'rxjs';
 

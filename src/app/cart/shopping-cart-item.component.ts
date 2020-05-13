@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Item } from './item';
 import { ServicesService } from './services.service';
 
 
@@ -10,7 +9,7 @@ import { ServicesService } from './services.service';
 })
 export class ShoppingCartItemComponent implements OnInit {
 
-  @Input() product:Item[];
+  @Input() product:any[];
 
   items:any[]=[];
   item:any[];

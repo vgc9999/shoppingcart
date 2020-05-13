@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Item } from './item';
 import { CartState } from './cartstate';
 import {Observable} from 'rxjs';
 import { Subject } from 'rxjs';
@@ -12,7 +11,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class ServicesService {
-  item:Item[]=[];
+  item:any[]=[];
   total:number=0;
   
   private cartSubject = new Subject<CartState>();
