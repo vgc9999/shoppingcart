@@ -1,0 +1,14 @@
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+    <h4>number of Carts added:{{item.length}}</h4>
+     <ol style="list-style-type:1">
+       <li *ngFor="let item of item"  class="cart-item">
+         <span class="cart-item__name">Item name:{{item.name}}</span>&nbsp;&nbsp;
+         <span class="cart-item__price">Price:{{item.price}}</span>
+       </li>
+     </ol>
+    <div class="cart__total">Total:{{total}} </div>
+  </div>
+</div>

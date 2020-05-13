@@ -1,0 +1,32 @@
+.shopping-list{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    right:0px;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+.shopping-cart{
+    text-align: center !important;
+    padding: 10px;
+}
+
+.container-main{
+    width: 100%;
+}
+.left-container{
+    width: 70%;
+    float: left;
+    padding-left: 30px;
+}
+.right-container{
+    width: 30%;
+    float: left;
+    position: relative;
+    top: 100px;
+}
+.product-content{
+    padding-left: 10px;
+}

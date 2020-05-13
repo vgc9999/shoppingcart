@@ -1,0 +1,30 @@
+
+<div class="">
+  
+   <div class="container-main">
+         <div class="left-container">
+               <input type="text" [(ngModel)]="userFilter.name" placeholder="Search for poduct names" />
+         </div>
+      
+         <div class="right-container">
+               
+               <select  (change)="orderfun($event)">
+                 <option>Sort Product name</option>
+                  <option value="asc">Asc</option>
+                  <option value="desc">Desc</option>
+               </select>
+         </div>
+   </div>
+
+
+   <div class="">
+      <app-shopping-cart-item 
+         [product]="product" 
+         *ngFor="let product of products | filterBy: userFilter |  orderBy: order : ordervaluedesc : ordervalue ">
+      </app-shopping-cart-item>
+   </div>
+   <div class="no-match" *ngIf="(products | filterBy: userFilter).length === 0">
+      No matching products
+   </div>
+   
+</div>
