@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Item } from './item';
 import { ServicesService } from './services.service';
 
 
@@ -9,10 +10,10 @@ import { ServicesService } from './services.service';
 })
 export class ShoppingCartItemComponent implements OnInit {
 
-  @Input() product:any[];
+  @Input() product:any;
 
-  items:any[]=[];
-  item:any[];
+  items:Item[]=[];
+  item:Item[];
 
   
 added:boolean;

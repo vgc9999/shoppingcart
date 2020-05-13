@@ -1,5 +1,6 @@
 import { Component, OnInit,OnDestroy, Input } from '@angular/core';
 import { ServicesService } from './services.service';
+import { Item } from './item';
 import { CartState } from './cartstate';
 import {Subscription} from 'rxjs';
 
@@ -13,9 +14,9 @@ export class ShoppingListComponent implements OnInit {
 
   loaded : boolean = true;
   total:number;
-   
+   // products : Item[];
     private subscription : Subscription;
-  item:any[]=[];
+  item:Item[]=[];
   constructor(private _service: ServicesService) { 
    
   }
