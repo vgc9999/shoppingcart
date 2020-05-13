@@ -26,7 +26,7 @@ input[type=text] {
     float: left;
     
 }
-select{
+.select-dropdown{
     height: 50px !important;
     width: 100% !important;
 }
@@ -36,3 +36,20 @@ select{
     left: 100px;
     color: red;
 }
+
+@media only screen and (max-width: 767px) {
+    .right-container {
+      width: 100% !important;
+      padding-left: 0px;
+      padding-right: 15px;
+      margin-top: 5px;
+
+    }
+    .left-container {
+        width: 100% !important;
+        padding-left: 0px;
+        padding-right: 15px;
+       
+
+      }
+  }  

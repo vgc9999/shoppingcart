@@ -30,3 +30,19 @@
 .product-content{
     padding-left: 10px;
 }
+
+@media only screen and (max-width: 767px) {
+    .right-container {
+      width: 100% !important;
+      padding-left: 15px;
+      padding-right: 15px;
+      position: relative;
+      top: 20px;
+      
+    }
+    .left-container {
+        width: 100% !important;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+  }
