@@ -14,9 +14,9 @@ export class ShoppingListComponent implements OnInit {
 
   loaded : boolean = true;
   total:number;
-   // products : Item[];
+   
     private subscription : Subscription;
-  item:Item[]=[];
+  item:any[]=[];
   constructor(private _service: ServicesService) { 
    
   }
