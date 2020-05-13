@@ -12,8 +12,8 @@ export class ShoppingCartItemComponent implements OnInit {
 
   @Input() product:Item[];
 
-  items:Item[]=[];
-  item:Item[];
+  items:any[]=[];
+  item:any[];
 
   
 added:boolean;
